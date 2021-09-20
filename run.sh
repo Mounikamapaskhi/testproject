@@ -1,5 +1,5 @@
 #!bin/bash
-while :
+while true
 do
 	echo "Welcome to first openshift deployment"
 done
