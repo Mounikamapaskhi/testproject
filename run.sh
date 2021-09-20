@@ -1,1 +1,2 @@
-sleep 99999999999999999999
+#!bin/bash
+echo "Welcome to first openshift deployment"
