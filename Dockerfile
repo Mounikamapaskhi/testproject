@@ -1,4 +1,6 @@
-FROM ubuntu:18.04
-CMD ["/bin/bash", "-c", "sleep infinity"]
-# CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
-Entrypoint run.sh
+FROM java-base-j8:latest
+ENV TEMP_DIR /temp_dir
+RUN mkdir temp_dir
+RUN chmod -R 777 temp_dir
+COPY run.sh /temp_dir
+ENTRYPOINT ${TEMP_DIR}/run.sh
