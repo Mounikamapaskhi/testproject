@@ -1,3 +1,4 @@
 #!bin/bash
 echo "Welcome to first openshift deployment"
-tail -f /dev/null
+sleep 9999999999999999999999999999
+
