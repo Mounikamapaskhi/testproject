@@ -1,5 +1,3 @@
 #!bin/bash
-while true
-do
-	echo "Welcome to first openshift deployment"
-done
+echo "Welcome to first openshift deployment"
+sleep 3600s 
